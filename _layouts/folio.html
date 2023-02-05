@@ -21,7 +21,7 @@ layout: default
 </div>
 <ul class="projects">
   {% if site.projects.size > 0 %}
-  {% for project in site.projects | sort: project.order | reverse %}
+  {% for project in site.projects %}
     {% if project.folioSlug == page.slug %}
       <li class="project">
         <div class="container">
