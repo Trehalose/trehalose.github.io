@@ -14,11 +14,10 @@ layout: default
       <small>I am a {{ page.title | escape }}!</small>
     </h1>
     <p>{{page.blurb}}</p>
-    <h3>
-      Some examples of {{page.exemplarTitle}} include:
-    </h3>
   </div>
 </div>
+
+<h3 class="mt-1">Some examples of {{page.exemplarTitle}} include:</h3>
 <ul class="projects">
   {% if site.projects.size > 0 %}
   {% for project in site.projects %}
