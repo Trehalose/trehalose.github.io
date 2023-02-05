@@ -6,6 +6,7 @@ collections:
   folios:
     output: true
   projects:
+    sort_by: "order"
     output: true
 
 #########################################################################################
