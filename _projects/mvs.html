@@ -1,0 +1,132 @@
+---
+layout: project
+order: 0
+permalink: "/developer/mvs/"
+folioSlug: "dev"
+egImg: "/assets/imgs/mvs/wizard-10.png"
+egImgAlt: "Screenshot of the MVS wizard's photo editing slide."
+heroImg: "/assets/imgs/mvs/wizard-1.png"
+title: "My Viking Story"
+description: "This project includes a web wizard for sharing passenger cruise photos, &amp; an administrative panel for managing those posts as marketing material."
+links:
+  0:
+    url: "https://www.vikingcruises.com/oceans/why-viking/community/my-viking-story.html"
+    text: "Page with the wizard"
+---
+<h2>Why?</h2>
+<p>
+	This was for an in-house product at the agency I worked for. It was also one of the earliest 
+	projects I worked on at the company. It was a learning experience for both me &amp; the company.
+</p>
+
+<div class="mt-1 flexer col md-row">
+	<div class="mb-1 flexo row md-mb-0 md-mr-1 md-col">
+		<img class="bordered img-half hauto mr-1 md-img-quarth md-hauto md-mb-1" src="/assets/imgs/mvs/panel-2.png" alt="Screenshot of MVS's administrative panel dashboard." />
+		<img class="bordered img-half hauto md-img-quarth md-hauto" src="/assets/imgs/mvs/wizard-9.png" alt="Screenshot of MVS's wizard review screen." />
+	</div>
+	<div>
+		<h2>Relevant contributions</h2>
+		<ul>
+			<li>Frontend development</li>
+			<li>QA development</li>
+		</ul>
+
+		<h2>Major tools</h2>
+		<div class="toolsets">
+			<div class="toolset">
+				<h3>Frontend:</h3>
+				<ul>
+					<li>React</li>
+					<li>Javascript</li>
+					<li>AdminLTE theming</li>
+					<li>SASS</li>
+					<li>Instagram API</li>
+					<li>Facebook API</li>
+				</ul>
+			</div>
+			<div class="toolset">
+				<h3>Backend:</h3>
+				<ul>
+					<li>PHP</li>
+					<li>Yii2</li>
+					<li>Docker</li>
+				</ul>
+			</div>
+			<div class="toolset">
+				<h3>Testing:</h3>
+				<ul>
+					<li>PhantomJS &rarr; Casper.js &rarr; nothing</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h2>Process</h2>
+<div class="flexer col md-row">
+	<div class="tabbed">
+		<ul>
+			<li>
+				Planning phase
+				<ul>
+					<li>This project was unusual because we worked directly with our client's project management team &amp; their Jira board instead of our own.</li>
+				</ul>
+			</li>
+			<li>
+				Working out tickets
+				<ul>
+					<li>We set up Docker containers for local environments.</li>
+					<li>I would work on the frontend feature &amp; bug tickets.</li>
+					<li>Created automated user acceptance testing. until our testing frameworks were deprecated.</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<img class="bordered img-wide hauto md-img-half mb-1 md-mb-0 md-ml-1" src="/assets/imgs/mvs/wizard-7.png" alt="Screenshot of an error message on the MVS wizard." />
+</div>
+
+<h2>Hurdles</h2>
+<ul>
+	<li>
+		It was a minor hurdle to implement the wizard from our codebase into our client's marketing site.
+		<ul>
+			<li>A different codebase controlled by a different team &amp; company.</li>
+			<li>We worked with our team's connection point with their team to get it done.</li>
+		</ul>
+	</li>
+	<li>
+		Our client was <em>very</em> adamant about implementing the Instagram &amp; Facebook APIs, 
+		but when the APIs deprecated, the client refused to renew anything.
+		<ul>
+			<li>We removed the dead APIs from the wizard &amp; backend panel.</li>
+			<li>There was no "diffuculty" per se', but it was very confusing &amp; I still think about it a lot.</li>
+		</ul>
+	</li>
+	<li>
+		I was mercilessly hounded &amp; harassed to make automated user acceptance tests for this application.
+		<ul>
+			<li>This was the first instance of this type of tests our agency ever used.</li>
+			<li>I was an intern at the time &amp; knew nothing about testing, &amp; very little about early React.</li>
+			<li>I learned it &amp; did it, but I have a very complicated relationship with writing tests because of it.</li>
+		</ul>
+	</li>
+</ul>
+<img class="bordered img-wide hauto mb-1" src="/assets/imgs/mvs/viking-site-2.png" alt="Screenshot of the wizard button implemented on the client website." />
+
+<div>
+	<h2>What did I learn?</h2>
+	<ul>
+		<li>Using React, &amp; implementing API calls with the Fetch API.</li>
+		<li>User acceptance testing.</li>
+		<li>Building with Docker containers.</li>
+		<li>A little about PHP.</li>
+		<li>The joys &amp; eldritch horrors of early stage GANs image generators.</li>
+	</ul>
+
+	<h2>What would I improve if I did it again?</h2>
+	<ul>
+		<li>Those APIs deserve to be re-implemented in the wizard. They added that extra 🧑‍🍳😙🤌</li>
+		<li>Use Cypress for user acceptance testing.</li>
+		<li>More support for accessibility in at least the wizard.</li>
+	</ul>
+</div>
