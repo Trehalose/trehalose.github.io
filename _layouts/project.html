@@ -13,13 +13,7 @@ layout: default
       <h3>Important Links</h3>
       <ul class="links">
         {% for link in page.links %}
-          <li>{{link}}</li>
-          <li>MAP: {{ link | map: "url" }}</li>
-          <li>MAP: {{ link | map: "text" }}</li>
-          <li>{{link["data"]}}</li>
-          <li>{{link["data"]["url"]}}</li>
-          <li>{{link["data"]["text"]}}</li>
-          <li><a href="{{link.data.url}}">{{link.data.text}}</a></li>
+          <li><a href="{{ link | map: "url" }}">{{ link | map: "text" }}</a></li>
         {% endfor %}
       </ul>
       {% endif %}
