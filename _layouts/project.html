@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="hero-sect">
+  <img class="hero" src="{{page.heroImg}}" aria-hidden="true" />
+  <div class="photo">
+    <img src="{{page.egImg}}" alt="{{page.egImgAlt}}" />
+  </div>
+  <div class="blurb">
+    <h1>{{page.title}}</h1>
+    <p>{{page.description}}</p>
+    {% if page.links.size > 0 %}
+      <h3>Important Links</h3>
+      <ul class="links">
+        {% for link in page.links %}
+          <li><a href="{{link.permalink}}">{{link.text}}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+  </div>
+</div>
+<article>{{content}}</article>
