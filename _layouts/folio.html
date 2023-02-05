@@ -22,7 +22,14 @@ layout: default
 <ul class="projects">
   {% if site.projects.size > 0 %}
   {% for project in site.projects %}
-    {% if project.folioSlug == page.slug %}
+    <li>
+      {{project}}
+      <br /><br />
+      {{project.folioSlug}}
+      <br /><br />
+      {{page.slug}}
+    </li>
+<!--     {% if project.folioSlug == page.slug %}
       <li class="project">
         <div class="container">
           <div class="photo">
@@ -35,7 +42,7 @@ layout: default
           </div>
         </div>
       </li>
-    {% endif %}
+    {% endif %} -->
   {% endfor %}
   {% else %}
   <li>Uh-oh! There are no projects added yet. Try again on another date.</li>
