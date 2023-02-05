@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<div class="hero-sect">
+  <img class="hero" src="" aria-hidden="true" />
+  <div class="postit yellow">
+    <img src="{{page.img}}" alt="{{page.imgAlt}}" />
+  </div>
+  <div class="blurb">
+    <h1>
+      <span class="title">
+        Hi, I'm
+        <em class="the-name">Rina <small><strong>the</strong></small> Bane.</em>
+      </span>
+      <small>I am a {{ page.title | escape }}!</small>
+    </h1>
+    <p>{{page.blurb}}</p>
+    <h3>
+      Some examples of {{page.exemplarTitle}} include:
+    </h3>
+  </div>
+</div>
+<ul class="projects">
+  {% if site.projects.size > 0 %}
+  {% for project in site.projects %}
+    {% if project.folioSlug == page.slug %}
+      <li class="project">
+        <div class="container">
+          <div class="photo">
+            <img src="{{project.egImg}}" alt="{{project.egImgAlt}}" />
+          </div>
+          <div class="details">
+            <p class="title">{{project.title}}</p>
+            <p class="description">{{project.description}}</p>
+            <a class="check-it" href="{{project.permalink}}">More details...</a>
+          </div>
+        </div>
+      </li>
+    {% endif %}
+  {% endfor %}
+  {% else %}
+  <li>Uh-oh! There are no projects added yet. Try again on another date.</li>
+  {% endif %}
+</ul>

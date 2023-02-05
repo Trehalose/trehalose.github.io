@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+      <!-- Base metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%- seo -%}
+    {%- feed_meta -%}
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+
+    <!-- Site details -->
+    <title>
+      {% if page.title != "Rina the Bane: the portfolio, the legend." %}
+        Rina the Bane: {{page.title}}
+      {% else %}
+        {{ site.title | default: "Rina the Bane: the portfolio, the legend." }}
+      {% endif %}
+    </title>
+    <meta name="description" content="The portfolio of Rina Bane.">
+
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- <a id="skip-to-content" href="#main-content" title="Click to skip to main content." aria-label="Click to skip to main content." target="_self">Skip to main content.</a> -->
+    {% include header.html %}
+    <main id="main-content">
+      {{ content }}
+    </main>
+    {% include footer.html %}
+    
+    <!-- Scripts -->
+    <!-- <script src="/assets/js/TODO.js"></script> -->
+  </body>
+</html>
