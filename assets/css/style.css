@@ -619,8 +619,9 @@ a:disabled>.postit::after {
 	align-items: center;
 	padding: 1rem;
 	width: 100%;
+	background-color: #ededed;
 }
-	.hero-sect.folio img.hero, .hero-sect.project img.hero {
+	.hero-sect.project img.hero {
 		position: absolute;
 		top: 0;
 		bottom: 0;
