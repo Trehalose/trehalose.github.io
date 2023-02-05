@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ site.lang | default: "en" }}">
   <head>
     <!-- Base metas -->
     <meta charset="utf-8">
@@ -7,13 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Site details -->
-    <title>
-      {% if page.title != "Rina the Bane: the portfolio, the legend." %}
-        Rina the Bane: {{page.title}}
-      {% else %}
-        {{ site.title | default: "Rina the Bane: the portfolio, the legend." }}
-      {% endif %}
-    </title>
+    <title>Rina the Bane: the portfolio, the legend.</title>
     <meta name="description" content="The portfolio of Rina Bane.">
 
     <!-- Styles -->
