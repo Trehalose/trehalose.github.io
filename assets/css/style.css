@@ -401,7 +401,7 @@ header nav ul li {
 	margin: 0.5rem 0.25rem;
 }
 
-header nav ul li button {
+header nav ul li a {
 	margin: 0;
 	padding: 0.35rem;
 	border: 0.125rem solid #ffffff;
@@ -411,14 +411,14 @@ header nav ul li button {
 	color: #ffffff;
 }
 
-header nav ul li button:disabled {
+header nav ul li a:disabled {
 	border: 0.125rem solid #777777;
 	background-color: #333333;
 	color: #777777;
 }
 
-header nav ul li button.current-hub,
-header nav ul li button.current-hub:disabled {
+header nav ul li a.current-hub,
+header nav ul li a.current-hub:disabled {
 	border: 0.125rem solid #ffffff;
 	background-color: #ffffff;
 	color: #000000;
