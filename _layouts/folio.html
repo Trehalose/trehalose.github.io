@@ -20,7 +20,7 @@ layout: default
 <h3 class="mt-1">Some examples of {{page.exemplarTitle}} include:</h3>
 <ul class="projects">
   {% if site.projects.size > 0 %}
-  {% for project in site.projects %}
+  {% for project in site.projects | sort: "order" | reverse %}
     {% if project.folioSlug == page.slug %}
       <li class="project">
         <div class="container">
