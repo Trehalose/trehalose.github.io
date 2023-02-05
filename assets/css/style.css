@@ -417,8 +417,8 @@ header nav ul li a:disabled {
 	color: #777777;
 }
 
-header nav ul li a.current-hub,
-header nav ul li a.current-hub:disabled {
+header nav ul li.current a,
+header nav ul li.current a:disabled {
 	border: 0.125rem solid #ffffff;
 	background-color: #ffffff;
 	color: #000000;
