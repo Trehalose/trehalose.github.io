@@ -1,1 +1,70 @@
-UNDER CONSTRUCTION, come back later
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+      <!-- Base metas -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%- seo -%}
+    {%- feed_meta -%}
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+
+    <!-- Site details -->
+    <title>
+      {% if page.title != "Rina the Bane: the portfolio, the legend." %}
+        Rina the Bane: {{page.title}}
+      {% else %}
+        {{ site.title | default: "Rina the Bane: the portfolio, the legend." }}
+      {% endif %}
+    </title>
+    <meta name="description" content="The portfolio of Rina Bane.">
+
+    <!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- <a id="skip-to-content" href="#main-content" title="Click to skip to main content." aria-label="Click to skip to main content." target="_self">Skip to main content.</a> -->
+    <main>
+      <div class="about-sect">
+        <h1>
+          Hi, I'm
+          <em class="the-name">Rina <small><strong>the</strong></small> Bane.</em>
+        </h1>
+        <p class="core-folio-prompt">Which of my portfolios will you review?</p>
+      </div>
+    
+      <div class="choices-container">
+        <a href="/developer/" class="choice clear">
+          <div class="postit yellow">
+            Developer
+          </div>
+        </a>
+        <button class="choice clear" disabled>
+          <div class="postit yellow">
+            <span>Games<br /><small><em>(Coming soon)</em></small></span>
+          </div>
+        </button>
+        <button class="choice clear" disabled>
+          <div class="postit yellow">
+            <span>Graphics<br /><small><em>(Coming soon)</em></small></span>
+          </div>
+        </button>
+        <button class="choice clear" disabled>
+          <div class="postit yellow">
+            <span>UI/UX&#13;<br /><small><em>(Coming soon)</em></small></span>
+          </div>
+        </button>
+      </div>
+    </main>
+    {% include footer.html %}
+    
+    <!-- Scripts -->
+    <!-- <script src="/assets/js/TODO.js"></script> -->
+  </body>
+</html>
