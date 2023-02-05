@@ -704,6 +704,75 @@ a:disabled>.postit::after {
 	margin-right: 0;
 }
 
+.projects {
+	flex: 1;
+	list-style: none;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	padding: 1rem;
+}
+	.projects .project {
+		width: 100%;
+		margin: 1rem 0;
+	}
+		.projects .project .container {
+			display: flex;
+			flex-wrap: nowrap;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-top: calc(var(--photo-r) * 0.55);
+			padding: 7rem 1rem 1rem 1rem;
+			border: 0.125rem solid #dddddd;
+			background-color: #ffffff;
+		}
+			.projects .project .container .photo {
+				--project-list-photo: calc(var(--photo-r) * 0.75);
+				width: 0;
+				height: 0;
+			}
+				.projects .project .container .photo img {
+					bottom: 1rem;
+					width: var(--project-list-photo);
+					height: calc(var(--project-list-photo) + (var(--project-list-photo) * 0.15));
+					border: calc(var(--project-list-photo) * 0.05) solid #fefefe;
+					border-bottom: calc(var(--project-list-photo) * 0.2) solid #fefefe;
+				}
+					.projects .project:nth-child(odd) .container .photo img {
+						-webkit-transform: rotate(5deg);
+						-moz-transform: rotate(5deg);
+						-o-transform: rotate(5deg);
+						-ms-transform: rotate(5deg);
+						-khtml-transform: rotate(5deg);
+						transform: rotate(5deg);
+					}
+					.projects .project:nth-child(even) .container .photo img {
+						-webkit-transform: rotate(-5deg);
+						-moz-transform: rotate(-5deg);
+						-o-transform: rotate(-5deg);
+						-ms-transform: rotate(-5deg);
+						-khtml-transform: rotate(-5deg);
+						transform: rotate(-5deg);
+					}
+			.projects .project .container .details {
+				flex: 1;
+				margin: 0 1rem;
+			}
+				.projects .project .container .details .title {
+					margin-bottom: 0.25rem;
+					font-size: 1.25em;
+					font-weight: bold;
+				}
+				.projects .project .container .details .description {
+					margin-bottom: 1rem;
+				}
+				.projects .project .container .details .check-it {
+					float: right;
+				}
+
 article {
 	flex: 1;
 	position: relative;
@@ -1035,6 +1104,75 @@ article .toolsets .toolset {
 	.hero-sect .blurb {
 		max-width: var(--blurb-w);
 	}
+	
+	.projects {
+		flex: 1;
+		list-style: none;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		width: 100%;
+		padding: 1rem;
+	}
+		.projects .project {
+			width: 100%;
+			margin: 1rem 0;
+		}
+			.projects .project .container {
+				display: flex;
+				flex-wrap: nowrap;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin-top: calc(var(--photo-r) * 0.55);
+				padding: 7rem 1rem 1rem 1rem;
+				border: 0.125rem solid #dddddd;
+				background-color: #ffffff;
+			}
+				.projects .project .container .photo {
+					--project-list-photo: calc(var(--photo-r) * 0.75);
+					width: 0;
+					height: 0;
+				}
+					.projects .project .container .photo img {
+						bottom: 1rem;
+						width: var(--project-list-photo);
+						height: calc(var(--project-list-photo) + (var(--project-list-photo) * 0.15));
+						border: calc(var(--project-list-photo) * 0.05) solid #fefefe;
+						border-bottom: calc(var(--project-list-photo) * 0.2) solid #fefefe;
+					}
+						.projects .project:nth-child(odd) .container .photo img {
+							-webkit-transform: rotate(5deg);
+							-moz-transform: rotate(5deg);
+							-o-transform: rotate(5deg);
+							-ms-transform: rotate(5deg);
+							-khtml-transform: rotate(5deg);
+							transform: rotate(5deg);
+						}
+						.projects .project:nth-child(even) .container .photo img {
+							-webkit-transform: rotate(-5deg);
+							-moz-transform: rotate(-5deg);
+							-o-transform: rotate(-5deg);
+							-ms-transform: rotate(-5deg);
+							-khtml-transform: rotate(-5deg);
+							transform: rotate(-5deg);
+						}
+				.projects .project .container .details {
+					flex: 1;
+					margin: 0 1rem;
+				}
+					.projects .project .container .details .title {
+						margin-bottom: 0.25rem;
+						font-size: 1.25em;
+						font-weight: bold;
+					}
+					.projects .project .container .details .description {
+						margin-bottom: 1rem;
+					}
+					.projects .project .container .details .check-it {
+						float: right;
+					}
 
 	article {
 		padding: 2rem max(4rem, calc(((100% - var(--photo-r) - var(--blurb-w)) / 2) + 1rem));
