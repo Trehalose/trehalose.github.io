@@ -13,7 +13,7 @@ layout: default
       <h3>Important Links</h3>
       <ul class="links">
         {% for link in page.links %}
-          <li><a href="{{link.permalink}}">{{link.text}}</a></li>
+          <li><a href="{{link.url}}">{{link.text}}</a></li>
         {% endfor %}
       </ul>
       {% endif %}
