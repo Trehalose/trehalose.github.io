@@ -401,7 +401,7 @@ header nav ul li {
 	margin: 0.5rem 0.25rem;
 }
 
-header nav ul li a {
+header nav ul li a, header nav ul li a:visited {
 	margin: 0;
 	padding: 0.35rem;
 	border: 0.125rem solid #ffffff;
