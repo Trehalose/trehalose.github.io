@@ -14,9 +14,9 @@ layout: default
       <ul class="links">
         {% for link in page.links %}
           <li>{{link}}</li>
-          <li>{{link.data}}</li>
-          <li>{{link.data.url}}</li>
-          <li>{{link.data.text}}</li>
+          <li>{{link["data"]}}</li>
+          <li>{{link["data"]["url"]}}</li>
+          <li>{{link["data"]["text"]}}</li>
           <li><a href="{{link.data.url}}">{{link.data.text}}</a></li>
         {% endfor %}
       </ul>
