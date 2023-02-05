@@ -14,6 +14,8 @@ layout: default
       <ul class="links">
         {% for link in page.links %}
           <li>{{link}}</li>
+          <li>MAP: {{ link | map: "url" }}</li>
+          <li>MAP: {{ link | map: "text" }}</li>
           <li>{{link["data"]}}</li>
           <li>{{link["data"]["url"]}}</li>
           <li>{{link["data"]["text"]}}</li>
