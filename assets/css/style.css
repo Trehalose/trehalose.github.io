@@ -776,6 +776,7 @@ a:disabled>.postit::after {
 			}
 				.projects .project .container .details .title {
 					margin-bottom: 0.25rem;
+					font-family: var(--font-sedgewick);
 					font-size: 1.25em;
 					font-weight: bold;
 				}
