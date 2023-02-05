@@ -1209,13 +1209,13 @@ article .toolsets .toolset {
 	}
 }
 @media only screen and (min-width: 860px) {
-	.hero-sect .blurb h1 .title {
+	.hero-sect.folio .blurb h1 .title, .hero-sect.project .blurb h1 .title {
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: flex-start;
 		align-items: center;
 	}
-	.hero-sect .blurb h1 .the-name {
+	.hero-sect.folio .blurb h1 .the-name, .hero-sect.project .blurb h1 .the-name {
 		margin-left: 0.3em;
 	}
 }
