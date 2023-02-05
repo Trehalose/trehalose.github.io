@@ -7,6 +7,13 @@ collections:
     output: true
   projects:
     output: true
+    order:
+      - mvs.html
+      - eral.html
+      - thankscrate.html
+      - beesmart.html
+#       - nf.html
+#       - onkaado.html
 
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
