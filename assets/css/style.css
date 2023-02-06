@@ -267,7 +267,7 @@ button:disabled.clear {
 }
 
 .flexo>* {
-	flex: 0;
+	flex: initial;
 }
 
 .row {
