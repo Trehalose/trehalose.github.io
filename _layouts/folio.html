@@ -20,22 +20,27 @@ layout: default
 <h3 class="mt-1">Some examples of {{page.exemplarTitle}} include:</h3>
 <ul class="projects">
   {% if site.projects.size > 0 %}
-  {% for project in site.projects | reverse %}
-    {% if project.folioSlug == page.slug %}
-      <li class="project">
-        <div class="container">
-          <div class="photo">
-            <img src="{{project.egImg}}" alt="{{project.egImgAlt}}" />
-          </div>
-          <div class="details">
-            <p class="title">{{project.title}}</p>
-            <p class="description">{{project.description}}</p>
-            <a class="check-it" href="{{project.permalink}}">More details...</a>
-          </div>
-        </div>
-      </li>
+    {% assign var projects = site.projects | where:"folioSlug",page.slug %}
+    {% if projects.size > 0 %}
+      {% for project in projects %}
+        {% if project.folioSlug == page.slug %}
+          <li class="project">
+            <div class="container">
+              <div class="photo">
+                <img src="{{project.egImg}}" alt="{{project.egImgAlt}}" />
+              </div>
+              <div class="details">
+                <p class="title">{{project.title}}</p>
+                <p class="description">{{project.description}}</p>
+                <a class="check-it" href="{{project.permalink}}">More details...</a>
+              </div>
+            </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% else %}
+    <li>Uh-oh! There are no projects added yet. Try again on another date.</li>
     {% endif %}
-  {% endfor %}
   {% else %}
   <li>Uh-oh! There are no projects added yet. Try again on another date.</li>
   {% endif %}
