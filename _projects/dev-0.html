@@ -1,0 +1,154 @@
+---
+layout: project
+permalink: "/developer/onkaado/"
+folioSlug: "dev"
+egImg: "/assets/imgs/onkaado/landing-whole-desktop.png"
+egImgAlt: "A screenshot of the Onkaado landing page in its desktop format."
+heroImg: "/assets/imgs/onkaado/social-meta.png"
+title: "Onkaado"
+description: "Onkaado is a multiplayer web game made to help people learn &amp; practice Japanese onomatopoeia. Right now, the application is being prepared for private user testing &amp; is not officially launched."
+links:
+  data:
+    url: "https://www.onkaado.com/"
+    text: "The app landing page"
+---
+
+<h2>Why?</h2>
+<p>
+  I chose to work on this project because I would personally like a series of fun tools to help me 
+  study and stay engaged while studying Japanese. I know that other people would benefit from tools 
+  like this too, so I am running on lots of hopes &amp; dreams!
+</p>
+
+<div class="mt-1 flexer col md-row">
+  <img class="bordered img-wide md-img-half mb-1 md-mb-0 md-mr-1" src="/assets/imgs/onkaado/404-moneyshot.gif" alt="Screen recording of Onkaado's 404 screen." />
+  <div>
+    <h2>Relevant contributions</h2>
+    <ul>
+      <li>Architectural choices</li>
+      <li>Frontend development</li>
+      <li>Backend development</li>
+      <li>QA development</li>
+      <li>Devops</li>
+    </ul>
+  
+    <h2>Major tools</h2>
+    <div class="toolsets">
+      <div class="toolset">
+        <h3>Frontend:</h3>
+        <ul>
+          <li>Vanilla JS</li>
+          <li>HTML</li>
+          <li>SVG</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+      <div class="toolset">
+        <h3>Backend:</h3>
+        <ul>
+          <li>NodeJS</li>
+          <li>Express</li>
+          <li>Passport</li>
+          <li>MongoDB</li>
+          <li>Neo4j</li>
+          <li>Socket.io</li>
+          <li>MailGun API</li>
+          <li>MailTrap API</li>
+          <li>MailJet API</li>
+        </ul>
+      </div>
+      <div class="toolset">
+        <h3>Testing:</h3>
+        <ul>
+          <li>Jest</li>
+          <li>Cypress</li>
+        </ul>
+      </div>
+      <div class="toolset">
+        <h3>Devops:</h3>
+        <ul>
+          <li>Heroku</li>
+          <li>Snyk</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Big decisions</h2>
+<div class="flexer col md-row">
+  <div class="tabbed">
+    <ul>
+      <li>
+        <strong>A web application</strong>
+        <ul><li>Easiest access on most types of devices for project onset.</li></ul>
+      </li>
+      <li>
+        <strong>NodeJS</strong>
+        <ul><li>I am a JS simp, so my bias 100% guided me with this. That is really it. If I could, I would live in a 100%
+        typeless Javascript world.</li></ul>
+      </li>
+      <li>
+        <strong>MongoDB</strong>
+        <ul><li>Quick and easy access to small data sets.</li></ul>
+      </li>
+      <li>
+        <strong>Neo4j</strong>
+        <ul><li>Great tool for gathering and creating metrics about learning associations.</li></ul>
+      </li>
+      <li>
+        <strong>Websockets</strong>
+        <ul><li>The meat and potatoes of this application is a multiplayer web game, and sockets are the quintessential
+        technology for allowing quick client interactions over the web. This is a no-brainer.</li></ul>
+      </li>
+      <li>
+        <strong>Vanilla JS frontend</strong>
+        <ul><li>"Travelling light" was an ideal for memory, bundling, &amp; time.</li></ul>
+      </li>
+    </ul>
+  </div>
+  <div class="flexer img-set row nowrap md-flexno md-ml-1">
+    <img class="bordered hidden md-shown img-eighth hauto" src="/assets/imgs/onkaado/settings-mobile.png" alt="Mobile screenshot of the app's settings screen." />
+    <img class="bordered mr-1 img-half hauto md-mr-0 md-img-half" src="/assets/imgs/onkaado/settings-desktop.png" alt="Desktop screenshot of the app's settings screen." />
+    <img class="bordered img-half hauto md-img-fourth" src="/assets/imgs/onkaado/game-waiting-mobile.png" alt="Mobile screenshot of the app's game waiting room screen." />
+  </div>
+</div>
+
+<h2>Hurdles</h2>
+<ul>
+  <li>
+    Back-and-forth trouble determining if I needed a graph database (DB) or not.
+    <ul>
+      <li>Initially determined no.</li>
+      <li>Later found out that yes, but for reasons I did not anticipate.</li>
+      <li>Implementation was a long process with lots of refactoring.</li>
+    </ul>
+  </li>
+  <li>
+    Did not implement accessibility (A11Y) initially.
+    <ul>
+      <li>This created a slower process of finding need-zones, documenting them, &amp; implementing fixes after first iterations of features were made.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>What did I learn?</h2>
+<ul>
+  <li>The whole implementation of websockets on the frontend and backend for game rooms!</li>
+  <li>Usage of SVG animation tags!</li>
+  <li>How to add highly-customizeable faux images &amp; image components.</li>
+  <li>Setting up user tests &amp; documenting finds for product improvement.</li>
+  <li>Cypress, and A11Y testing with it.</li>
+</ul>
+
+<h2>What would I improve if I did it again?</h2>
+<ul>
+  <li>If its a learning platform, graph databases are your friend.</li>
+  <li>Implement A11Y immediately as a facet of each feature, not as an extension or secondary feature.</li>
+  <li>Generate images on canvas instead of focusing heavily on SVG.</li>
+</ul>
+<div class="mt-1 flexo">
+  <img class="bordered mr-05 img-third hauto md-mr-1" src="/assets/imgs/onkaado/game-playerreview-desktop.png" alt="Screenshot of the player review screen in the game." />
+  <img class="bordered mr-05 img-third hauto md-mr-1" src="/assets/imgs/onkaado/game-waiting-desktop.png" alt="Desktop screenshot of the app's game waiting room screen." />
+  <img class="bordered img-third hauto" src="/assets/imgs/onkaado/game-roundwin-desktop.png" alt="Screenshot of a winner being displayed in the game." />
+</div>
