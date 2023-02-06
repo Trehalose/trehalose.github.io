@@ -721,7 +721,7 @@ a:disabled>.postit::after {
 	flex: 1;
 	list-style: none;
 	display: flex;
-	flex-flow: column-reverse nowrap;
+	flex-flow: column nowrap;
 	justify-content: flex-start;
 	align-items: center;
 	width: 100%;
