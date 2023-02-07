@@ -43,6 +43,9 @@ img {
 	height: auto;
 	pointer-events: none;
 }
+	img.contain {
+		object-fit: contain;
+	}
 
 .bordered {
 	border: 0.125rem solid #dddddd;
