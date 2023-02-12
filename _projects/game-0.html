@@ -1,0 +1,113 @@
+---
+layout: project
+permalink: "/games/penguinko/lost-roll.png"
+folioSlug: "games"
+egImg: "/assets/imgs/penguinko/start.png"
+egImgAlt: "A screenshot of the starting state of the game. A ball if positioning itself automatically at the top of the screen; a penguin is chilling in the bottom left corner; there are pegs, a snowwy landscape with ice rivers, and text about how to play."
+heroImg: "/assets/imgs/penguinko/"
+title: "Penguinko"
+description: "A simple pachinko game I made to learn Unity and get a long overdue refresher on using C#."
+links:
+  dataA:
+    url: "https://github.com/Trehalose/penguinko/tree/main/executable_builds"
+    text: "Executable ZIP"
+  dataB:
+    url: "https://github.com/Trehalose/penguinko"
+    text: "Code"
+---
+<h2>Why?</h2>
+<p>
+  It was finally time I bite the bullet and learn Unity. This is my first project with it. 
+  Even if it is a pretty basic game, I wasn't following a step-by-step tutorial to make it; 
+  but rather, I made it with the knowledge I gathered from learning Unity's basics from 
+  their foundational lesson course.
+</p>
+
+<div class="mt-1 mb-1 flexer col md-row">
+  <div class="flexo col mb-1 md-mb-0 md-mr-1">
+    <div>
+      <h2>Tools &amp; Contributions</h2>
+      <div class="toolsets">
+        <div class="toolset">
+          <h3>Development:</h3>
+          <ul>
+          <li>Unity</li>
+          <li>C#</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <img class="bordered img-wide hauto mt-1 md-shown" src="/assets/imgs/penguinko/rolling.png" alt="Screenshot of the snowball rolling down the pegs." />
+  </div>
+
+  <div>
+    <h2>Process</h2>
+    <div class="tabbed">
+      <p>
+        I was reading through beginner tutorials for Unity, trying to figure out what to do for my 
+        first project when I got a gist of the overall system. Near the end of one, that was 
+        going over 2D gravity &amp; collisions, it mentioned a Pachinko game as a project to try 
+        out a user's newly learned collision skills. I digged the idea, &amp; went with it.
+      </p>
+      <p>
+        I didn't really look at any of the directions after that point because I was confident in 
+        my ability to set up the base system and find what I needed to set up the next steps. 
+        So I set up the basic layout and collisions for the pegs that the ball hits.
+      </p>
+      <p>
+        After that, I planned what would make it more interesting:
+      </p>
+      <ul>
+        <li>Score tracking</li>
+        <li>A cute sprite that reacts to score changes</li>
+        <li>All vibes~</li>
+      </ul>
+      <p>
+        I imported a <a href="https://assetstore.unity.com/packages/2d/characters/2d-character-sprite-animation-penguin-236747" target="_blank">free penguin sprite</a> 
+        asset from the Unity Asset Store for the game's fluff character. 
+        I learned how to add its built in animation events to the scene's 
+        sprite instance, and added my own in there as well.
+      </p>
+      <p>
+        I added code components to the ball, penguin, and trigger events 
+        when the ball hit any of the ice floors.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="mb-1 flexer col md-row-reverse">
+  <div>
+    <h2>Hurdles</h2>
+    <ul>
+    <li>Figuring out how to connect different GameObjects in GUI's with manually written C# scripts.</li>
+    <li>Figuring out how sprite animations work.
+      <ul>
+      <li>Using transform parameters are not relative to the sprite prefab, but based on scene's coordinates(?/.)</li>
+      </ul>
+    </li>
+    <li>
+      Making a build cuts off the default viewport size that Unity sets for the game.
+      <ul>
+      <li>This one makes me angry.</li>
+      <li>I used a workaround by making the executable window resizable.</li>
+      </ul>
+    </li>
+    </ul>
+  </div>
+  <img class="bordered img-wide hauto md-img-half mt-1 md-mt-0 md-mr-1" src="/assets/imgs/penguinko/cutoff-viewport.png" alt="A screenshot of the executable viewport being cut off, hiding the rules of the game." />
+</div>
+
+<div class="mb-1 flexer col md-row">
+  <div>
+    <h2>What did I learn?</h2>
+    <ul>
+    <li>Collisions.</li>
+    <li>Implementing C# scripts with GameObjects.</li>
+    <li>Triggering events./li>
+    <li>Adding sprite animations.</li>
+    <li>Making a build to WebGL &amp; to Windows executables.</li>
+    </ul>
+  </div>
+  <img class="bordered img-wide hauto md-img-half mt-1 md-mt-0 md-ml-1" src="/assets/imgs/penguinko/screeny-animation-edits.png" alt="A screenshot of the animation editing screen for the fainting animation." />
+</div>
