@@ -41,11 +41,13 @@ img {
 	object-fit: cover;
 	width: 100%;
 	height: auto;
-	cursor: pointer;
 }
 	img.contain {
 		object-fit: contain;
 	}
+#review-content img {	
+	cursor: pointer;
+}
 #img-reviewer {
 	position: fixed;
 	top: 0; bottom: 0; left: 0; right: 0;
