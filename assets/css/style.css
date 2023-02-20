@@ -41,6 +41,7 @@ img {
 	object-fit: cover;
 	width: 100%;
 	height: auto;
+	cursor: pointer;
 }
 	img.contain {
 		object-fit: contain;
@@ -64,6 +65,7 @@ img {
 		width: auto;
 		height: auto;
 		object-fit: contain;
+		cursor: default;
 		pointer-events: none;
 	}
 	#close-img-reviewer {
