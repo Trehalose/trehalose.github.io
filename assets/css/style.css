@@ -41,12 +41,37 @@ img {
 	object-fit: cover;
 	width: 100%;
 	height: auto;
-	pointer-events: none;
 }
 	img.contain {
 		object-fit: contain;
 	}
-
+#img-reviewer {
+	position: fixed;
+	top: 0; bottom: 0; left: 0; right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	padding-top: 3.5rem;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: rgba(0, 0, 0, 0.9);
+}
+	#img-reviewer img {
+		position: relative;
+		margin: auto;
+		max-width: 100%;
+		width: auto;
+		height: auto;
+		object-fit: contain;
+		pointer-events: none;
+	}
+	#close-img-reviewer {
+		position: absolute;
+		top: 0; right: 0;
+		background-color: #ffffff;
+		color: #000000;
+	}
 .bordered {
 	border: 0.125rem solid #dddddd;
 	border-radius: 0.3rem;
