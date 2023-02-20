@@ -19,4 +19,23 @@ layout: default
       {% endif %}
   </div>
 </div>
-<article>{{content}}</article>
+<article id="review-content">{{content}}</article>
+<script>
+  const minimizeImgModal = () => {
+    const imgModalEL = document.getElementById('img-reviewer');
+    imgModalEL.remove();
+  };
+  const maximizeImgModal = (e) => {
+    e.preventDefault();
+
+    const imgEl = e.currentTarget;
+    document.body.insertAdjacentHTML('beforeend', `<div id="img-reviewer">
+      <img src="${imgEl.getAttribute('src')}" alt="${imgEl.getAttribute('alt')}" />
+      <button id="close-img-reviewer" onclick="minimizeImgModal()">Close</button>
+    </div>`);
+  };
+
+  const contentContainerEl = document.getElementById('review-content');
+  const contentImgEls = contentContainerEl.querySelectorAll('img');
+  contentImgEls.forEach(el => { el.addEventListener('click', maximizeImgModal); });
+</script>
