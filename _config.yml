@@ -7,6 +7,8 @@ collections:
     output: true
   projects:
     output: true
+  previews:
+    output: true
 
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
